@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Responsive Design Matters</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #000000;
+      color: #f0f0f0;
+      font-family: 'Poppins', Arial, sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+      padding: 15px 20px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+      font-weight: 600;
+    }
+    .navbar .logo {
+      color: #FFD700;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      user-select: none;
+      cursor: default;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #FFD700;
+      text-shadow: 0 0 5px #ffd700;
+    }
+    /* Blog Article */
+    .blog-article {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #111;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    }
+    .blog-article h2 {
+      color: #FFD700;
+      margin-bottom: 25px;
+      font-weight: 700;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #FFD700;
+      text-align: center;
+    }
+    .blog-article img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 30px auto;
+      display: block;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .blog-article img:hover {
+      transform: scale(1.05);
+    }
+    p, ul {
+      font-size: 1.15rem;
+      margin-bottom: 25px;
+      color: #ddd;
+    }
+    ul {
+      padding-left: 40px;
+    }
+    ul li {
+      margin-bottom: 15px;
+    }
+    /* Footer */
+    .footer {
+      text-align: center;
+      background: #111;
+      padding: 20px;
+      font-size: 0.95rem;
+      color: #aaa;
+      margin-top: 60px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 8px;
+      font-family: 'Poppins', Arial, sans-serif;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">AUSTRALIA SOFTWARE HUB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Blog Article -->
+  <section class="blog-article">
+    <h2>Why Responsive Design Matters</h2>
+    <img src="images/blog3.jpg" alt="Responsive Design" />
+    <p>
+      Responsive design ensures your website looks and functions perfectly
+      on desktops, tablets, and smartphones. It’s no longer a luxury—it’s a necessity.
+    </p>
+    <p>
+      Benefits of responsive design include:
+    </p>
+    <ul>
+      <li>Improved user experience across all devices.</li>
+      <li>Better SEO rankings as search engines favor mobile-friendly sites.</li>
+      <li>Cost savings by maintaining one adaptable site instead of multiple versions.</li>
+      <li>Faster load times, reducing bounce rates.</li>
+    </ul>
+    <p>
+      In short, responsive design helps you reach more people,
+      keep them engaged, and improve your online presence.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 AustraliasoftwareHub. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+

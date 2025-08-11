@@ -1,0 +1,27 @@
+.blog-article {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.blog-article h2 {
+  color: #FFD700;
+  margin-bottom: 15px;
+}
+
+.blog-article p, 
+.blog-article li {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+

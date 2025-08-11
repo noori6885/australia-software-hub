@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5 Tips for a Mobile-Friendly Website</title>
+  
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      background-color: #000000;
+      color: #f0f0f0;
+      font-family: 'Poppins', Arial, sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+    h2 {
+      color: #FFD700;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 2.5rem;
+      text-shadow: 0 0 8px #FFD700;
+    }
+    .blog-article {
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: 8px;
+      background: #121212;
+      padding: 30px 40px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+      text-align: center; /* Center contents */
+    }
+    .blog-article img {
+      width: 250px;        /* Fixed width */
+      height: 250px;       /* Fixed height */
+      border-radius: 50%;  /* Circle shape */
+      object-fit: cover;   /* Cover image area nicely */
+      margin: 0 auto 30px auto; /* Center with margin bottom */
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+    .blog-article img:hover {
+      transform: scale(1.05);
+    }
+    p, ol {
+      font-size: 1.15rem;
+      margin-bottom: 25px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #ddd;
+      text-align: left;
+    }
+    ol {
+      padding-left: 40px;
+      color: #ffd700;
+      font-weight: 600;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+      padding: 15px 20px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      font-family: 'Poppins', Arial, sans-serif;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    }
+    .navbar .logo {
+      color: #FFD700;
+      font-size: 1.6rem;
+      letter-spacing: 1.5px;
+      cursor: default;
+      user-select: none;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #FFD700;
+      text-shadow: 0 0 5px #ffd700;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      background: #111;
+      padding: 20px;
+      font-size: 0.95rem;
+      color: #aaa;
+      margin-top: 60px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 8px;
+      font-family: 'Poppins', Arial, sans-serif;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">AUSTRALIA SOFTWARE HUB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Blog Article -->
+  <section class="blog-article">
+    <h2>Mobile-Friendly Website</h2>
+    <img src="images/ne.jpg" alt="Mobile Friendly Design" />
+    <p>
+      In today’s world, more than half of all internet traffic comes from mobile devices.
+      A website that isn’t mobile-friendly risks losing visitors, rankings, and conversions.
+      Here are five practical tips:
+    </p>
+    <ol>
+      <li>Use a responsive design that adapts to all screen sizes.</li>
+      <li>Optimize images for faster loading on mobile networks.</li>
+      <li>Ensure buttons and links are large enough for easy tapping.</li>
+      <li>Minimize pop-ups that disrupt the mobile browsing experience.</li>
+      <li>Test regularly on different mobile devices.</li>
+    </ol>
+    <p>
+      Following these tips will ensure your visitors have a smooth, enjoyable experience,
+      no matter what device they use.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 AustraliasoftwareHub. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+

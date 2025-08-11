@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nooreen | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.6;
+      box-sizing: border-box;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+      padding: 15px 20px;
+      max-width: 900px;
+      margin: 20px auto 40px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+    .navbar .logo {
+      color: #FFD700;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      user-select: none;
+      cursor: default;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #FFD700;
+      text-shadow: 0 0 5px #ffd700;
+    }
+
+    h1, h2 {
+      color: #FFD700;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-shadow: 0 0 10px #e6c200;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    /* Profile Section */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #FFD700;
+      box-shadow: 0 0 15px #FFD700;
+      flex-shrink: 0;
+    }
+    .profile-info {
+      max-width: 600px;
+      text-align: left;
+    }
+    .profile-info h2 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+    .profile-info p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    /* Skills Section */
+    .skills {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+      margin-bottom: 50px;
+    }
+    .skills h2 {
+      margin-top: 0;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .skill {
+      background: #333;
+      padding: 10px 18px;
+      border-radius: 20px;
+      color: #FFD700;
+      font-weight: 600;
+      box-shadow: 0 0 8px #e6c200;
+      font-size: 1rem;
+      user-select: none;
+      transition: background 0.3s;
+      cursor: default;
+    }
+    .skill:hover {
+      background: #e6c200;
+      color: #000;
+    }
+
+    /* Experience Section */
+    .experience {
+      margin-bottom: 50px;
+    }
+    .job {
+      background: #1a1a1a;
+      padding: 20px 25px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      transition: box-shadow 0.3s;
+    }
+    .job:hover {
+      box-shadow: 0 0 25px #FFD700;
+    }
+    .job h3 {
+      color: #FFD700;
+      margin-bottom: 8px;
+    }
+    .job .date {
+      font-style: italic;
+      color: #e6c200;
+      margin-bottom: 12px;
+    }
+    .job p {
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    /* Environment Section */
+    .environment {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+      margin-bottom: 50px;
+    }
+    .tools-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .tool {
+      text-align: center;
+      color: #e6c200;
+      cursor: default;
+      user-select: none;
+    }
+    .tool img {
+      width: 60px;
+      height: 60px;
+      filter: drop-shadow(0 0 3px #FFD700);
+      border-radius: 12px;
+      margin-bottom: 8px;
+    }
+    .tool-name {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .profile {
+        flex-direction: column;
+      }
+      .profile-info {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AUSTRALIA SOFTWARE HUB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Nooreen - Web Developer Portfolio</h1>
+
+    <section class="profile">
+      <img class="profile-photo" src="images/77.png" alt="Nooreen Khalid" />
+      <div class="profile-info">
+        <h2>Hello, I'm Nooreen!</h2>
+        <p>
+          I am a passionate software engineer and web developer focused on creating beautiful, modern, and fully responsive websites.
+          With experience in front-end and back-end technologies, I bring ideas to life by crafting seamless digital experiences.
+        </p>
+        <p>
+          I specialize in HTML5, CSS3, JavaScript, React, and Node.js, along with database management using MongoDB and MySQL.
+          My goal is to deliver clean, efficient, and user-friendly web solutions tailored to clients’ needs.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">UI/UX Design</div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <h3>Freelance Web Developer</h3>
+        <div class="date">Jan 2023 – Present</div>
+        <p>
+          Developing websites and web applications for clients, delivering custom solutions that meet their business goals.
+          Managing full project lifecycle from concept to deployment.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>Intern - Software Development</h3>
+        <div class="date">Jun 2025 </div>
+        <p>
+          Assisted in developing internal tools using React and Node.js.
+          Improved UI responsiveness and collaborated with cross-functional teams.
+        </p>
+      </div>
+    </section>
+
+    <section class="environment">
+      <h2>My Development Environment</h2>
+      <p>Here are some of the tools and technologies I use daily to create professional, modern web solutions:</p>
+      <div class="tools-list">
+        <div class="tool">
+          <img src="images/vs.png" alt="VS Code" />
+          <div class="tool-name">VS Code</div>
+        </div>
+        <div class="tool">
+          <img src="images/github.png" alt="GitHub" />
+          <div class="tool-name">GitHub</div>
+        </div>
+        <div class="tool">
+          <img src="images/react.png" alt="React" />
+          <div class="tool-name">React</div>
+        </div>
+        <div class="tool">
+          <img src="images/node.png" alt="Node.js" />
+          <div class="tool-name">Node.js</div>
+        </div>
+        <div class="tool">
+          <img src="images/m.png" alt="MongoDB" />
+          <div class="tool-name">MongoDB</div>
+        </div>
+        <div class="tool">
+          <img src="images/s.png" alt="MySQL" />
+          <div class="tool-name">MySQL</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
+

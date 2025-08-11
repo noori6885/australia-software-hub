@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Services | Australia Software Hub</title>
+<style>
+  body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background: #000; /* Black background for the whole page */
+    color: #f0f0f0; /* Light text color for readability */
+  }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 15px 20px;
+    max-width: 1000px;
+    margin: 20px auto 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+  }
+  .navbar .logo {
+    color: #FFD700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    user-select: none;
+    cursor: default;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: #FFD700;
+    text-shadow: 0 0 5px #ffd700;
+  }
+
+  .container { 
+    max-width: 1000px; 
+    margin: auto; 
+    padding: 20px; 
+    background: #111; /* Dark gray for contrast inside container */
+    box-shadow: 0 0 10px rgba(255,255,255,0.1); 
+    border-radius: 10px;
+  }
+  h1 { 
+    text-align: center; 
+    color: #fff; 
+  }
+  .service { 
+    margin-bottom: 40px; 
+  }
+  .service img, 
+  .service video { 
+    width: 100%; 
+    max-height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+  }
+  .service h2 { 
+    margin-top: 15px; 
+    color: #ffcc00; /* Gold accent color for headings */
+  }
+  .service p { 
+    color: #ddd; 
+    line-height: 1.6; 
+  }
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AUSTRALIA SOFTWARE HUB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Our Services</h1>
+
+    <div class="service">
+      <img src="images/n.jpg" alt="Custom Web Development" />
+      <h2>Custom Web Development</h2>
+      <p>We build fully tailored websites that not only align with your brand identity but also elevate it. Our development process focuses on delivering exceptional performance, clean code, and a visually appealing interface that engages visitors. Every feature is crafted to meet your specific business needs, ensuring you stand out in the competitive online space and create a lasting impression on your audience.</p>
+    </div>
+
+    <div class="service">
+      <img src="images/y.jpg" alt="WordPress Website Creation" />
+      <h2>WordPress Website Creation</h2>
+      <p>Our team designs and develops stunning WordPress websites that combine beauty with functionality. We create layouts that are intuitive, SEO-friendly, and mobile-optimized, giving you the power to manage your content effortlessly. From custom themes to advanced plugins, every element is chosen to maximize your site’s performance, strengthen your online presence, and keep your visitors coming back for more.</p>
+    </div>
+
+    <div class="service">
+      <video src="images/x.mp4" autoplay muted loop></video>
+      <h2>Mobile-Responsive Design</h2>
+      <p>We create cutting-edge websites that adapt flawlessly to any screen size, ensuring an exceptional browsing experience on desktops, tablets, and smartphones alike. Our responsive design approach enhances usability, boosts engagement, and helps you connect with users wherever they are. By combining speed, aesthetics, and functionality, we deliver solutions that make your website look stunning and work seamlessly on every device.</p>
+      <img src="images/l.jpg" alt="Mobile-Responsive Design" />
+    </div>
+  </div>
+</body>
+</html>
+

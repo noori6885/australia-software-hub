@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testimonials | Noureen Khalid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #111;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #FFD700;
+    }
+    h1 {
+      color: #FFD700;
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      font-size: 2.8rem;
+    }
+
+    .testimonial {
+      display: flex;
+      gap: 25px;
+      background: #222;
+      border-left: 6px solid #FFD700;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(255, 215, 0, 0.35);
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+    .testimonial:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #FFD700;
+    }
+
+    .testimonial-img {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 8px #FFD700;
+    }
+    .testimonial-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .testimonial-text {
+      flex-grow: 1;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #ddd;
+      position: relative;
+    }
+
+    .testimonial-text::before {
+      content: "“";
+      font-size: 4rem;
+      color: #FFD700;
+      position: absolute;
+      top: -20px;
+      left: -15px;
+      opacity: 0.3;
+      font-family: serif;
+    }
+
+    .testimonial-name {
+      margin-top: 15px;
+      font-weight: 700;
+      color: #FFD700;
+      font-style: normal;
+      text-align: right;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .testimonial {
+        flex-direction: column;
+        text-align: center;
+      }
+      .testimonial-img {
+        margin-bottom: 15px;
+      }
+      .testimonial-name {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .testimonial-text::before {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -25px;
+      }
+    }
+
+    /* Comment Form */
+    form {
+      background: #222;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+      margin-top: 50px;
+    }
+    form h2 {
+      color: #FFD700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #e6c200;
+    }
+    form input[type="text"],
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      margin-bottom: 20px;
+      resize: vertical;
+      font-size: 1rem;
+    }
+    form textarea {
+      min-height: 80px;
+    }
+    form button {
+      background: #FFD700;
+      color: #000;
+      border: none;
+      padding: 14px 28px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #FFD700;
+      transition: background 0.3s;
+      display: block;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+    form button:hover {
+      background: #e6c200;
+    }
+
+    /* New testimonials container */
+    #new-testimonials {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Testimonials</h1>
+
+    <!-- Existing Testimonials -->
+    <div class="testimonial">
+      <div class="testimonial-img">
+        <img src="images/45.jpg" alt="Naveed Khan" />
+      </div>
+      <div>
+        <div class="testimonial-text">
+          Nooreen is a dedicated developer with a keen eye for design. She delivered our project ahead of schedule with excellent communication throughout.
+        </div>
+        <div class="testimonial-name">Naveed Khan</div>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial-img">
+        <img src="images/32.jpg" alt="Qasim Ali" />
+      </div>
+      <div>
+        <div class="testimonial-text">
+          Working with Nooreen was a pleasure. Her websites are always clean, fast, and modern. Highly recommended for anyone needing professional web development.
+        </div>
+        <div class="testimonial-name">Qasim Ali</div>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial-img">
+        <img src="images/65.jpg" alt="Hania Malik" />
+      </div>
+      <div>
+        <div class="testimonial-text">
+          Nooreen’s creativity and technical skills brought our vision to life perfectly. She was responsive and very helpful every step of the way.
+        </div>
+        <div class="testimonial-name">Hania Malik</div>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial-img">
+        <img src="images/42.jpg" alt="Maryam Aslam" />
+      </div>
+      <div>
+        <div class="testimonial-text">
+          I’m very impressed by Nooreen’s attention to detail and her ability to make complex features user-friendly. The project exceeded our expectations.
+        </div>
+        <div class="testimonial-name">Maryam Aslam</div>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial-img">
+        <img src="images/51.jpg" alt="Malik Raza" />
+      </div>
+      <div>
+        <div class="testimonial-text">
+          Professional, reliable, and talented — Noureen made our new website stand out with a modern design and smooth functionality.
+        </div>
+        <div class="testimonial-name">Malik Raza</div>
+      </div>
+    </div>
+
+    <!-- Comment Submission Form -->
+    <form id="testimonialForm">
+      <h2>Submit Your Testimonial</h2>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label for="imageUrl">Image URL (optional)</label>
+      <input type="text" id="imageUrl" name="imageUrl" placeholder="Link to your photo (optional)" />
+
+      <label for="message">Your Testimonial</label>
+      <textarea id="message" name="message" placeholder="Write your testimonial here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- New testimonials will appear here -->
+    <div id="new-testimonials"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById('testimonialForm');
+    const newTestimonials = document.getElementById('new-testimonials');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = form.name.value.trim();
+      const message = form.message.value.trim();
+      let imageUrl = form.imageUrl.value.trim();
+
+      if (!imageUrl) {
+        // Default image if none provided
+        imageUrl = 'https://randomuser.me/api/portraits/lego/1.jpg';
+      }
+
+      if (name && message) {
+        const testimonialDiv = document.createElement('div');
+        testimonialDiv.classList.add('testimonial');
+
+        testimonialDiv.innerHTML = `
+          <div class="testimonial-img">
+            <img src="${imageUrl}" alt="${name}" />
+          </div>
+          <div>
+            <div class="testimonial-text">${message}</div>
+            <div class="testimonial-name">${name}</div>
+          </div>
+        `;
+
+        // Append new testimonial on top
+        newTestimonials.prepend(testimonialDiv);
+
+        // Reset form
+        form.reset();
+      }
+    });
+  </script>
+</body>
+</html>
+
